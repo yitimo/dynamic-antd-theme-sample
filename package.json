@@ -5,11 +5,12 @@
   "dependencies": {
     "antd": "^3.16.1",
     "react": "^16.8.6",
+    "react-app-polyfill": "^0.2.2",
+    "react-dev-utils": "^8.0.0",
+    "antd-theme-webpack-plugin": "^1.2.0",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "react-app-polyfill": "^0.2.2",
-    "react-dev-utils": "^8.0.0",
     "@babel/core": "7.2.2",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/plugin-transform-react-jsx-self": "^7.2.0",
@@ -22,7 +23,6 @@
     "webpack": "4.28.3",
     "webpack-dev-server": "3.1.14",
     "webpack-manifest-plugin": "2.0.4",
-    "antd-theme-webpack-plugin": "^1.2.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
