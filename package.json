@@ -3,14 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    
     "antd": "^3.16.1",
     "react": "^16.8.6",
-    "react-app-polyfill": "^0.2.2",
-    "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "react-app-polyfill": "^0.2.2",
+    "react-dev-utils": "^8.0.0",
     "@babel/core": "7.2.2",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/plugin-transform-react-jsx-self": "^7.2.0",
