@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -10,10 +9,11 @@ class App extends Component {
     });
   }
   render() {
+    const colors = ['#ffea00', '#39C5BB', 'red']
     return (
       <div className="App primary">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src="/logo.svg" className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
@@ -25,8 +25,11 @@ class App extends Component {
           >
             Learn React
           </a>
-          <Button onClick={() => this.swTheme('#ffea00')}>#ffea00</Button>
-          <Button onClick={() => this.swTheme('#39C5BB')}>#39C5BB</Button>
+          <Button.Group>
+            {
+              colors.map((e, i) => <Button key={i} onClick={() => this.swTheme(e)}>{e}</Button>)
+            }
+          </Button.Group>
         </header>
       </div>
     );
