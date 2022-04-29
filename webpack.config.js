@@ -58,6 +58,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [{
         from: path.resolve('public'),
+        to: 'public'
       }],
     }),
     ...(isProd ? [
@@ -78,8 +79,10 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    disableHostCheck: true,
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    allowedHosts: 'all',
     port: 3000,
   },
   optimization: isProd ? {
